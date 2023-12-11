@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDDFF"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/ivLogoLogin"
+            android:layout_width="188dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo__projeto" />
+
+        <TextView
+            android:id="@+id/tvTituloLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FAÇA LOGIN"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:background="@drawable/borda_arredondada"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Digite seu email aqui"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:shadowColor="#000000"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:elevation="10dp"/>
+
+            <TextView
+                android:id="@+id/tvSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Digite sua senha" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:background="@drawable/borda_arredondada"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Digite sua senha aqui"
+                android:inputType="textPassword"
+                android:paddingLeft="5sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:elevation="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Não possui uma conta?" />
+
+                <TextView
+                    android:id="@+id/tvCadastrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="irParaCadastro"
+                    android:text="Cadastrar"
+                    android:textColor="#007FFF" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:backgroundTint="#007FFF"
+                android:gravity="center"
+                android:text="Entrar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:elevation="10dp"/>
+
+            <TextView
+                android:id="@+id/tvEmail3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Esqueci minha senha"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmail4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="ou"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="ENTRAR COM GOOGLE"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="ENTRAR COM MICROSOFT"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp"
+                android:backgroundTint="#007FFF"
+                android:text="ENTRAR COM FACEBOOK" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
